@@ -94,7 +94,7 @@ var initOption = function() {
 	                }
 	            },
 	            edgeSymbol:['none','none'],
-	            edgeSymbolSize: [4, 50],//边两端的标记大小
+	            edgeSymbolSize: [20, 20],//边两端的标记大小
 	            edgeLabel: {
 	                normal: {
 	                    show: true,

@@ -12,7 +12,7 @@ export default {
     return {
         dataInput: {
             style: {
-              height: 800
+              height: 800 //canvas高度
             },
             node: [
                 {
@@ -29,23 +29,26 @@ export default {
             ],
             relation: [
                 {
-                    source: 0,
-                    target: 1,
-                    value: '丈夫'
+                    source: '徐贱云',
+                    target: '冯可梁',
+                    value: '丈夫',
+                    symbol: ['none','arrow']
                 }, {
                     source: 1,
                     target: 0,
-                    value: '妻子'
+                    value: '妻子',
+                    symbol: ['none','arrow']
                 }, {
-                    source: 1,
+                    source: '冯可梁',
                     target: 2,
                     value: '朋友'
                 }, {
                     source: 0,
                     target: 2,
-                    value: '同学'
+                    value: '同学',
+                    symbol: ['arrow','arrow']
                 }
-            ], 
+            ],
             node_category: [
                 {
                     name: '男性',
@@ -85,12 +88,12 @@ export default {
                         }
                     }
                     //TODO:可添加 隐藏的hideLineStyle ...
-                }, 
+                },
                 "丈夫": {
                     lineStyle: {
                         normal: { curveness: 0.4 } //可设置为负值
                     }
-                }, 
+                },
                 "妻子": {
                     lineStyle: {
                         normal: { curveness: 0.4 }
@@ -98,7 +101,7 @@ export default {
                 }
                 //"同学": {}  不添加则是默认
             },
-            legend: ["男性", "女性", '未知']
+            legend: ["男性", "女性"] //可部分隐藏,此处省略了未知性别
         }
     }
   },
