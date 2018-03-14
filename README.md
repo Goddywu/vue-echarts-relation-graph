@@ -1,6 +1,6 @@
 # vue-echarts-relation-graph
 
-> A Vue.js project
+> A Vue.js project created by Goddy
 
 ## Build Setup
 
